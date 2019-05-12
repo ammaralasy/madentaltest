@@ -33,17 +33,50 @@ nav {
 }
 .nav-list {
   position: absolute;
-  top: -40%;
+  top: -50%;
+  width: 100%;
+  height: 100%;
 }
 .nav-list li {
   display: inline-block;
 }
+.nav-list > li {
+  width: 100%;
+}
 .logo img {
   width: calc(75px + 5vw);
 }
-.navbar li {
-  margin-right: 10px;
+.navbar {
+  display: flex;
+  justify-content: space-around;
 }
+.navbar-item {
+/*width: 20%;
+text-align: center;*/
+border: 2px solid grey;
+}
+
 .navbar img {
   width: calc(25px + 2vw);;
+}
+.logo {
+  /*width: 30%;
+  position: absolute; */
+  /*width: 25%;
+  border: 2px solid purple;*/
+}
+.nav-list > li:first-of-type {
+  border: 2px solid green;
+  width: 25%;
+  /*width: 30%;
+  height: auto;
+  position: absolute;
+  z-index: 6;*/
+}
+.nav-list > li:nth-of-type(2) {
+  width: 75%;
+  position: absolute;
+  left: 25%;
+  top: 60%;
+  border: 2px solid blue;
 }
